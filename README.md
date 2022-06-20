@@ -1,34 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+1. Choice of Package: Please specify the key packages you use (except for React) and explain why you choose the particular package.
 
-## Getting Started
+a. What's the purpose/importance of the package?
 
-First, run the development server:
+I used Next.js framework for the whole project.
+Generally such booking platforms require high Google SEO for user attractive and Next.js provides good effects regarding google SEO.
+That's the most important point that I selected this Next.js
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+b. What are the benefits & drawbacks associated with that choice?
+Next.js provides server side rendering and it improves the application performance as well as SEO.
+It also makes developer easier to construct application full-fledged.
+There are also more benefits using Next.js such as fast refresh, TypeScript support and so on.
+By the way, it doesn't provide many built-in front pages, so you have to create the whole front-end layer from the ground up.
+And it doesn't support many plugins
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+c. What are the assumptions underlying that choice?
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+I've worked on React.js and Next.js projects for several years and have deep understanding about it's features and much experienced to use it.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+2. Potential Improvement: Please elaborate on what kind of improvements you would like to implement if you have given more time.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- cancel schedule
+Now, there are no account info so we can't match the user and his/her scheduled data.
+So I wanan implement auth feature to register user info in backend so they can see their scheduled info as well as cancel function
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- booking database restructure
+For now, the datastructure of booking is not so clear and perfect so I wanna change it on my mind.
 
-## Deploy on Vercel
+- detailed schedule option
+According to less time, I couldn't implement the details about schedule options.
+For example, users should choose time range (15min, 30min, 1hr, etc) for scheduling the booking and each time range will change the available time slot on the calendar or table.
+So we can add option for time range on scheduling page.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- get nearby doctors from my side.
+The doctors have their info which is also containing their addresses.
+We can get the users' location using api once they come to our platform.
+With comparing two loactions, we can get the nearest doctors that users can prefer.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- view doctors shedule and my booking lists weekly, monthly and daily.
+
+3. Production consideration: Any extra steps should be taken with caution when deploying your app to a production environment?
+- Use caching wherever possible.
+- Ensure the database and backend are deployed in the same region.
+- Aim to ship the least amount of JavaScript possible.
+- Ensure logging is set up.
+- Ensure error handling is set up.
+- Configure the 404 (Not Found) and 500 (Error) pages.
+
+4. Assumptions
+a. Any assumptions you have made when you designed the data model and API schema?
+Regarding the data model, I will create a user table and save the booking table with userid instead of name and doctorid.
+In terms of API schema, I will update the get booking api with params.
+We only have api that gets all booking lists at the moment, but it's not convenient because all data has to be retrieved whenever a user wants to book. We can include doctorId, date, and userId in the params, so that backend filters the data and retrieve the matching data.
+It will reduce the time.
+
+b. Any other assumptions and opinions you have taken throughout the assessments?
+I think almost of my opinions regarding the assesments are mentioned on the above questions.
+Thanks

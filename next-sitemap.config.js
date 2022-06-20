@@ -3,5 +3,3 @@ const config = {
   generateRobotsTxt: true, // (optional)
   // ...other options
 }
-
-export default config

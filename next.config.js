@@ -5,6 +5,7 @@ const nextConfig = {
   reactStrictMode: true,
   sass: true,
   modules: true,
+  distDir: 'build',
   experimental: { images: { layoutRaw: true } },
   sassOptions: {
     includePaths: [
