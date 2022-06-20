@@ -1,3 +1,5 @@
+Deployed on Netlify: https://the-great-chenstar125-gmail-com-site-e1aeb.netlify.app/
+
 1. Choice of Package: Please specify the key packages you use (except for React) and explain why you choose the particular package.
 
 a. What's the purpose/importance of the package?
