@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Clinic</title>
+        <title>Doctor Booking</title>
         <meta name='description' content='Doctor booking app' />
         <link
           href='https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap'
