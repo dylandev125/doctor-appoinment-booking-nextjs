@@ -1,5 +1,4 @@
-Deployed on Netlify: https://the-great-chenstar125-gmail-com-site-e1aeb.netlify.app/
-
+Deployed on Netlify: https://doctor-booking-assignment.netlify.app
 1. Choice of Package: Please specify the key packages you use (except for React) and explain why you choose the particular package.
 
 a. What's the purpose/importance of the package?
@@ -10,6 +9,7 @@ That's the most important point that I selected this Next.js
 
 
 b. What are the benefits & drawbacks associated with that choice?
+
 Next.js provides server side rendering and it improves the application performance as well as SEO.
 It also makes developer easier to construct application full-fledged.
 There are also more benefits using Next.js such as fast refresh, TypeScript support and so on.
@@ -52,12 +52,15 @@ With comparing two loactions, we can get the nearest doctors that users can pref
 - Configure the 404 (Not Found) and 500 (Error) pages.
 
 4. Assumptions
+
 a. Any assumptions you have made when you designed the data model and API schema?
+
 Regarding the data model, I will create a user table and save the booking table with userid instead of name and doctorid.
 In terms of API schema, I will update the get booking api with params.
 We only have api that gets all booking lists at the moment, but it's not convenient because all data has to be retrieved whenever a user wants to book. We can include doctorId, date, and userId in the params, so that backend filters the data and retrieve the matching data.
 It will reduce the time.
 
 b. Any other assumptions and opinions you have taken throughout the assessments?
+
 I think almost of my opinions regarding the assesments are mentioned on the above questions.
 Thanks
