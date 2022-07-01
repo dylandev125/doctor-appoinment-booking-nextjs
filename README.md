@@ -1,3 +1,34 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Deployed on Netlify: https://doctor-booking-assignment.netlify.app
 1. Choice of Package: Please specify the key packages you use (except for React) and explain why you choose the particular package.
 
